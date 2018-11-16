@@ -1,0 +1,2 @@
+model_checkpoint_path: "D:\\work\\python_project\\AnomalyDetection\\model\\model.ckpt"
+all_model_checkpoint_paths: "D:\\work\\python_project\\AnomalyDetection\\model\\model.ckpt"
