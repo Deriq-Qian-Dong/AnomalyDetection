@@ -1,7 +1,7 @@
 # AnomalyDetection
 ## LSTM对时间序列的数据做预测，通过偏离值的大小达到异常检测的目的
 ### 1.思路
-&#8195;&#8195;用一个网格7*24个小时的数据预测该网格第7*24+1个小时的in out，如果这个预测in out与真实值的差距大于一个阈值（该阈值最终取3,见Fig3），就把这小时对应的网格当做一个异常的网格，可以达到实时检测的效果
+&#8195;&#8195;用一个网格7x24个小时的数据预测该网格第7x24+1个小时的in out，如果这个预测in out与真实值的差距大于一个阈值（该阈值最终取3,见Fig3），就把这小时对应的网格当做一个异常的网格，可以达到实时检测的效果
 <div align=center><img width="600" height="300" src="https://github.com/DQ0408/AnomalyDetection/blob/master/imgs/Fig1.png"/></div>
 <div align=center> Fig1.某网格7*24小时（一周）的时序图 </div>
 
