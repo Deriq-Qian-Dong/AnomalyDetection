@@ -2,22 +2,22 @@
 ## LSTM对时间序列的数据做预测，通过偏离值的大小达到异常检测的目的
 ### 1.思路
 用一个网格7*24个小时的数据预测该网格第7*24+1个小时的in out，如果这个预测in out与真实值的差距大于一个阈值（该阈值最终取3,见Fig3），就把这小时对应的网格当做一个异常的网格，可以达到实时检测的效果
-<div align=center><img width="300" height="150" src="https://github.com/DQ0408/AnomalyDetection/blob/master/imgs/Fig1.png"/></div>
-** Fig1.某网格7*24小时（一周）的时序图 **
+<div align=center><img width="600" height="300" src="https://github.com/DQ0408/AnomalyDetection/blob/master/imgs/Fig1.png"/></div>
+<div align=center> Fig1.某网格7*24小时（一周）的时序图 </div>
 
-<div align=center><img width="300" height="150" src="https://github.com/DQ0408/AnomalyDetection/blob/master/imgs/Fig2.png"/></div>
-**Fig2.某网格相邻四周的时序图**
+<div align=center><img width="600" height="300" src="https://github.com/DQ0408/AnomalyDetection/blob/master/imgs/Fig2.png"/></div>
+<div align=center>Fig2.某网格相邻四周的时序图</div>
 
-<div align=center><img width="300" height="150" src="https://github.com/DQ0408/AnomalyDetection/blob/master/imgs/Fig3.png"/></div>
-**Fig3.训练loss与epoch的箱型图**
+<div align=center><img width="600" height="300" src="https://github.com/DQ0408/AnomalyDetection/blob/master/imgs/Fig3.png"/></div>
+<div align=center>Fig3.训练loss与epoch的箱型图</div>
 
 ####（异常的阈值取3因为最后一个epoch的均方差loss基本小于9）
 
-<div align=center><img width="300" height="150" src="https://github.com/DQ0408/AnomalyDetection/blob/master/imgs/Fig4.png"/></div>
-**Fig4.训练loss与每个step的曲线图**
+<div align=center><img width="600" height="300" src="https://github.com/DQ0408/AnomalyDetection/blob/master/imgs/Fig4.png"/></div>
+<div align=center>Fig4.训练loss与每个step的曲线图</div>
 
-<div align=center><img width="300   " height="150" src="https://github.com/DQ0408/AnomalyDetection/blob/master/imgs/Fig5.png"/></div>
-**Fig5.某网格第五周的预测图**
+<div align=center><img width="600   " height="300" src="https://github.com/DQ0408/AnomalyDetection/blob/master/imgs/Fig5.png"/></div>
+<div align=center>Fig5.某网格第五周的预测图</div>
 
 #### Fig5中红线是真实值±3，代表异常的阈值曲线，绿线是预测值曲线，蓝线是真实值的曲线，绿线超出红线即视为异常
 
