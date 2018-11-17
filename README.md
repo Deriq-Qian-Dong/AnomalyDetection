@@ -8,7 +8,7 @@
 <div align=center><img width="600" height="300" src="https://github.com/DQ0408/AnomalyDetection/blob/master/imgs/Fig2.png"/></div>
 <div align=center>Fig2.某网格相邻四周的时序图</div>
 
-<div align=center><img width="600" height="300" src="https://github.com/DQ0408/AnomalyDetection/blob/master/imgs/Fig3.png"/></div>
+<div align=center><img width="600" height="300" src="https://github.com/DQ0408/AnomalyDetection/blob/master/imgs/Fig3.jpg"/></div>
 <div align=center>Fig3.训练loss与epoch的箱型图</div>
 
 <div align=center>（异常的阈值取3因为最后一个epoch的均方差loss基本小于9）</div>
